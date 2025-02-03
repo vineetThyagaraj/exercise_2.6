@@ -4,13 +4,12 @@ import java.util.Scanner;
 public class App {
     public static void main(String [] args){
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the subtotal: ");
+        System.out.println("Enter the subtotal and a gratuity rate: ");
         double subtotal = input.nextDouble();
-        System.out.println("Enter the gratuityRate: ");
         double gratuityRate = input.nextDouble();
         double gratuity = calculateGratuity(subtotal, gratuityRate);
         double total = calculateTotal(subtotal, gratuity);
-        System.out.println ("Gratuity: $" + gratuity + " Total: $" + total);
+        System.out.println ("The gratuity is  $" + gratuity + " and total is $" + total);
         input.close();
     }
        
